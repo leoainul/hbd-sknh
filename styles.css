@@ -1,0 +1,109 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #288d2d;
+}
+
+h6 {
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+.hidden {
+  opacity: 2;
+  visibility: hidden;
+  font-family: "Signika", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #c4515c;
+  text-shadow: 2px 2px 2px #fff;
+  display: none;
+  font-weight: bold;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.movingText {
+  position: relative;
+  animation: moveText 2s linear infinite;
+}
+
+/* style judul  */
+#judul {
+  text-shadow: #fff;
+  font-weight: 800;
+  padding-bottom: 40px;
+  animation-name: wiggle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* animasi judul */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+}
+
+#panggilan {
+  font-size: 1em;
+  font-family: "Poetsen One", Sans-Serif;
+  animation: Bounce 1s ease alternate infinite;
+}
+
+/* animasi tulisan panggilan */
+@keyframes Bounce {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+/* style nama */
+#nama_hbd {
+  font-weight: 100;
+  font-size: 1em;
+  font-family: "Poetsen One", Sans-Serif;
+  animation: Bounce 1s ease alternate infinite;
+}
+
+/* animasi nama */
+@keyframes Bounce {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.mainkan {
+  font-size: 0.7em;
+  border-color: #81e45a;
+  padding: 5px;
+  text-transform: uppercase;
+  font-family: "Signika", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background-color: #81e203;
+}
